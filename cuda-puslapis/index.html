@@ -3,13 +3,24 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><link rel="preconnect" href="https://fonts.googleapis.com">
+    <title></title><link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,700;1,600&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,700;1,600&display=swap" rel="stylesheet"></title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,700;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        function myFunction() {
+            var x = document.getElementById('mMenu');
+            if (x.style.display ==="block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </head>
 <body>
     <header class="site-header">
@@ -25,6 +36,18 @@
                     <li><a href="#"> Blog</a></li>
                     <li><a href="#"> Contact</a></li>
                 </ul>
+            </nav>
+            <nav class="mobile-nav">
+                <ul id="mMenu" class="flex-container">
+                    <li><a href="#"> Home</a></li>
+                    <li><a href="#"> About</a></li>
+                    <li><a href="#"> Work</a></li>
+                    <li><a href="#"> Blog</a></li>
+                    <li><a href="#"> Contact</a></li>
+                </ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="bi bi-list"></i>
+                </a>
             </nav>
         </div>
     </header>
@@ -61,7 +84,6 @@
                 <h3>Branding</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, ullam.</p>
             </div>
-
         </div>
     </section>
     <section class="contact">
@@ -82,5 +104,20 @@
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="container">
+            <nav class="nav footer-nav">
+                <ul class="flex-container">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Google+</a></li>
+                    <li><a href="#">Linkedin</a></li>
+                    <li><a href="#">Behands</a></li>
+                    <li><a href="#">FDribble</a></li>
+                    <li><a href="#">Github</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>
